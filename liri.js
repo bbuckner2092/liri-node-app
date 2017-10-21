@@ -4,6 +4,8 @@ var twitterKeys = require("./keys");
 var Twitter = require("twitter");
 // accessing fs package
 var fs = require("fs");
+// Code for request
+var request = require("request");
 
 // Wanted to grab the date of creation and last 20 tweets.
 var client = new Twitter({
@@ -18,7 +20,10 @@ client.get('statuses/user_timeline', my_tweets, function(error, tweets, response
     if (!error) {
         console.log(tweets);
         for (var i = 0; i < tweets.length; i++) {
+        	console.log("Below are your tweets!");
+        	console.log("=======================");
             console.log(tweets[i].text);
+
 
         };
 
