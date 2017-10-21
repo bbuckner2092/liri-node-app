@@ -20,9 +20,9 @@ client.get('statuses/user_timeline', my_tweets, function(error, tweets, response
     if (!error) {
         console.log(tweets);
         for (var i = 0; i < tweets.length; i++) {
-        	console.log("Below are your tweets!");
-        	console.log("=======================");
+        	console.log("Below is tweet: " + tweets[i]);
             console.log(tweets[i].text);
+            console.log("=======================");
 
 
         };
