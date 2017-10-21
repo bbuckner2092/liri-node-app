@@ -17,5 +17,10 @@ var my_tweets = { screen_name: 'gTBuckner92' };
 client.get('statuses/user_timeline', my_tweets, function(error, tweets, response) {
     if (!error) {
         console.log(tweets);
+        for (var i = 0; i < tweets.length; i++) {
+            console.log(tweets[i].text);
+
+        };
+
     }
 });
