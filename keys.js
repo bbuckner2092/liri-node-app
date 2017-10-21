@@ -7,3 +7,5 @@ var twitterKeys = {
 	access_token_secret: '',
 
 }
+
+module.exports = twitterKeys;
